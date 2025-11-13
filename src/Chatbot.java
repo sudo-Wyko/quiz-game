@@ -1,41 +1,20 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Chatbot {
-
-    private class Command {
-        String name;
-        boolean isAvailable;
-
-        public Command(String name) {
-            this.name = name;
-            this.isAvailable = true;
-        }
-
-        public String GetName() {
-            return name;
-        }
-
-        public boolean GetAvailability() {
-            return isAvailable;
-        }
-
-        public void SetAvailability(boolean bool) {
-            isAvailable = bool;
-        }
-    };
 
     private String name;
     private Lesson strong_subject;
     private Lesson weak_subject;
-    private char answer;
-    private Command[] commands = { new Command("Ask"), new Command("CopyPaste"), new Command("Save") };
+    private char bot_answer;
 
-    public Chatbot(String name, Lesson strong_subject, Lesson weak_subject) {
+    Scanner scanner = new Scanner(System.in);
+
+    public Chatbot(String name) {
         this.name = name;
-        this.strong_subject = strong_subject;
-        this.weak_subject = weak_subject;
-        this.answer = ' ';
+        this.bot_answer = ' ';
+        AssignStrengthAndWeakness();
     }
 
     public String GetName() {
@@ -48,6 +27,25 @@ public class Chatbot {
 
     public Lesson GetWeakness() {
         return weak_subject;
+    }
+
+    public void AssignStrengthAndWeakness() {
+        int strong_pick = (int) (Math.random() * Lesson.values().length);
+        strong_subject = Lesson.values()[strong_pick];
+
+        int weak_pick;
+        do {
+            weak_pick = (int) (Math.random() * Lesson.values().length);
+        } while (weak_pick == strong_pick);
+
+        weak_subject = Lesson.values()[weak_pick];
+    }
+
+    public void PrintStats() {
+        System.out.println("-------------- Chatbot Stats ----------------");
+        System.out.println("Name:" + name);
+        System.out.println("Specialization: " + strong_subject);
+        System.out.println("Weak in: " + weak_subject);
     }
 
     public void Answer(Lesson lesson, Question question) {
@@ -64,44 +62,38 @@ public class Chatbot {
         int probability = (int) (Math.random() * 100);
 
         if (probability >= failure_threshold) {
-            answer = question.GetAnswer();
+            bot_answer = question.GetAnswer();
         }
 
         else {
             char correct_answer = question.GetAnswer();
             ArrayList<Character> options = new ArrayList<>(List.of('A', 'B', 'C', 'D'));
             options.remove((Character) correct_answer);
-            answer = options.get((int) (Math.random() * options.size()));
+            bot_answer = options.get((int) (Math.random() * options.size()));
         }
 
     }
 
-    public void CommandAsk() {
-        if (commands[0].GetAvailability() == false)
-            return;
+    public char CommandAsk() {
+        System.out.println(name + ": My answer is " + bot_answer);
 
-        System.out.println(name + ": My answer is " + answer);
-        return;
+        System.out.print("Do you accept their answer? (y/n): ");
+        String choice = scanner.nextLine().toLowerCase();
+        if (choice.equals("y"))
+            return bot_answer;
+        else {
+            System.out.println("What is your answer? ");
+            return scanner.nextLine().toUpperCase().charAt(0);
+        }
     }
 
-    public void UseCommand(Command command) {
-        if (command.GetAvailability() == false)
-            return;
+    public char CommandCopyPaste() {
+        return bot_answer;
+    }
 
-        if (command.GetName() == "Ask") {
-            System.out.println(name + ": My answer is " + answer);
-            return;
-        }
-
-        else if (command.GetName() == "CopyPaste") {
-
-        }
-
-        else if (command.GetName() == "Save") {
-
-        }
-
-        command.SetAvailability(false);
+    public char CommandSave() {
+        System.out.println(name + ": My answer is " + bot_answer);
+        return bot_answer;
     }
 
 }
