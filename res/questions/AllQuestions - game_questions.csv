@@ -1,0 +1,642 @@
+,,,Part 1. Theoretical Questions ,,,,,,,
+,Done,Num.,Lesson,Question Type,Question Body,Choice A,Choice B,Choice C,Choice D,Correct Answer
+1,FALSE,1,Intro to Programming Paradigms,Theoretical,"What is a ""programming paradigm""?","A specific programming language, like Java or C.",A set of rules for debugging code.,A fundamental style or way of thinking about how to build software.,A software library for user interfaces.,C
+1,FALSE,2,Intro to Programming Paradigms,Theoretical,"A language that supports multiple programming paradigms (e.g., Python, C++) is called:",A multi-threaded language,A multi-paradigm language,A compiled language,A high-level language,B
+1,FALSE,3,Intro to Programming Paradigms,Theoretical,The set of rules defining the valid structure and symbols of a language is its:,Paradigm,Semantics,Syntax,Algorithm,C
+1,FALSE,4,Intro to Programming Paradigms,Theoretical,The *meaning* of a syntactically correct piece of code is referred to as its:,Semantics,Paradigm,Type system,Control flow,A
+1,FALSE,5,Intro to Programming Paradigms,Theoretical,Why do different programming paradigms exist?,Because older paradigms are obsolete and replaced by new ones.,To make programming more difficult.,Because different paradigms are better suited for solving different types of problems.,Because computer hardware has changed.,C
+1,FALSE,6,Intro to Programming Paradigms,Theoretical,Which paradigm does the C language primarily follow?,Object-Oriented,Functional,Procedural,Event-Driven,C
+1,FALSE,7,Intro to Programming Paradigms,Theoretical,Which paradigm does the Java language primarily follow?,Object-Oriented,Procedural,Functional,Declarative,A
+1,FALSE,8,Intro to Programming Paradigms,Theoretical,SQL (Structured Query Language) is a classic example of which paradigm?,Imperative,Declarative,Procedural,Object-Oriented,B
+1,FALSE,9,Intro to Programming Paradigms,Theoretical,Which paradigm is modeled on the concept of mathematical functions?,Procedural,Object-Oriented,Functional,Imperative,C
+1,FALSE,10,Intro to Programming Paradigms,Theoretical,"A paradigm defines a program's structure, its building blocks, and:",The specific company that created it.,The methods of computation and data organization.,The exact speed at which the code will run.,The type of computer it can run on.,B
+1,FALSE,11,Procedural Programming,Theoretical,What is the fundamental building block of a procedural program?,An object,A procedure (or function/subroutine),An event,A class,B
+1,FALSE,12,Procedural Programming,Theoretical,How is a problem typically solved in the procedural paradigm?,By modeling real-world objects.,By defining a sequence of steps or procedure calls to follow.,By responding to user-initiated events.,By defining the logical result without specifying the steps.,B
+1,FALSE,13,Procedural Programming,Theoretical,Procedural programming is a sub-paradigm of which broader paradigm?,Declarative,Functional,Object-Oriented,Imperative,D
+1,FALSE,14,Procedural Programming,Theoretical,"What is a ""top-down design"" in the context of procedural programming?",Starting with the user interface and working backward.,"Breaking a large problem into smaller procedures, then breaking those procedures into even smaller ones.","Writing all the code in a single, long file from top to bottom.",Designing the data structures before writing any functions.,B
+1,FALSE,15,Procedural Programming,Theoretical,How is data (state) typically handled in procedural programming?,It is strictly encapsulated within objects.,"It is often stored in shared or global variables, or passed as parameters between procedures.",It is immutable and cannot be changed.,It is only stored in databases.,B
+1,FALSE,16,Procedural Programming,Theoretical,Which language is considered the classic example of procedural programming?,Java,Haskell,C,Smalltalk,C
+1,FALSE,17,Procedural Programming,Theoretical,"What is a primary criticism of procedural programming for very large, complex systems?",It is too slow.,It makes code easy to reuse.,The separation of data and the functions that operate on it can make state management difficult.,It relies too much on mathematical principles.,C
+1,FALSE,18,Procedural Programming,Theoretical,"What is a ""procedure call""?",A variable that stores a value.,A data structure that holds other data.,"An instruction that executes a specific, named block of code (the procedure).",A type of error.,C
+1,FALSE,19,Procedural Programming,Theoretical,Which control structures are central to procedural programming?,"Sequence, selection (if/switch), and iteration (loops).",Inheritance and polymorphism.,Event listeners and callbacks.,Higher-order functions and recursion.,A
+1,FALSE,20,Procedural Programming,Theoretical,"In procedural programming, how is program state typically changed?",By creating a new copy of the state.,By sending a message to an object.,"By direct assignment, modifying the value of a variable.",State is not allowed to change.,C
+1,FALSE,21,Functional Programming (FP),Theoretical,What is the core concept of functional programming?,Building programs by composing objects.,Building programs as a sequence of imperative commands.,"Building programs by composing pure functions, avoiding shared state and mutable data.",Building programs by responding to asynchronous events.,C
+1,FALSE,22,Functional Programming (FP),Theoretical,"What does ""immutability"" mean in the context of FP?",Functions cannot be changed.,"Once data (like a variable or object) is created, its state cannot be modified.",The program cannot accept user input.,The program's source code cannot be edited.,B
+1,FALSE,23,Functional Programming (FP),Theoretical,"What is a ""pure function""?",A function that only uses local variables.,"A function that has no ""side effects"" and always returns the same output for the same input.",A function that is part of the language's standard library.,A function that has no parameters.,B
+1,FALSE,24,Functional Programming (FP),Theoretical,"Which of the following is an example of a ""side effect""?",Calculating the sum of two numbers.,Modifying a global variable.,Returning a value.,Taking a parameter.,B
+1,FALSE,25,Functional Programming (FP),Theoretical,"In ""pure"" FP, what concept is often used for iteration instead of traditional `for` or `while` loops?",`goto` statements,Recursion,Procedure calls,Global variables,B
+1,FALSE,26,Functional Programming (FP),Theoretical,A function that either takes another function as an argument or returns a function is called:,A pure function,A higher-order function,An impure function,A constructor,B
+1,FALSE,27,Functional Programming (FP),Theoretical,Functional programming is a sub-paradigm of which broader paradigm?,Imperative,Procedural,Object-Oriented,Declarative,D
+1,FALSE,28,Functional Programming (FP),Theoretical,"""Referential transparency"" is a property of pure functions which means:",A function's name must refer to its purpose.,A function call can be replaced by its resulting value without changing the program's behavior.,A function must be written by a trusted source.,A function must be visible to all other parts of the program.,B
+1,FALSE,29,Functional Programming (FP),Theoretical,What is a key benefit of immutability and pure functions?,Programs use less memory.,"Programs are easier to test, debug, and run in parallel (concurrency).",Programs run faster on a single core.,Programs require less code.,B
+1,FALSE,30,Functional Programming (FP),Theoretical,"Which language is most strongly associated with ""pure"" functional programming?",C,Haskell,Java,JavaScript,B
+1,FALSE,31,OOP (Object-Oriented Programming),Theoretical,"What is the fundamental, active unit in OOP?",The procedure,The function,The object,The class,C
+1,FALSE,32,OOP (Object-Oriented Programming),Theoretical,"What is a ""class"" in OOP?",An instance of an object.,A blueprint or template used to create objects.,A global function.,"A data type, like `int` or `float`.",B
+1,FALSE,33,OOP (Object-Oriented Programming),Theoretical,The principle of bundling data (attributes) and the methods (behavior) that operate on that data into a single unit is called:,Inheritance,Polymorphism,Encapsulation,Abstraction,C
+1,FALSE,34,OOP (Object-Oriented Programming),Theoretical,"The practice of hiding an object's internal state and requiring all interaction to be performed through its methods (e.g., getters/setters) is a form of:",Inheritance,Encapsulation (data hiding),Recursion,Composition,B
+1,FALSE,35,OOP (Object-Oriented Programming),Theoretical,"What is ""inheritance""?",A mechanism where one object can access the private data of another object.,A mechanism where a new class (subclass) derives properties and methods from an existing class (superclass).,A way to create multiple instances of the same class.,A way to bundle data and methods together.,B
+1,FALSE,36,OOP (Object-Oriented Programming),Theoretical,The ability of an object or method to take on many forms is known as:,Polymorphism,Abstraction,Encapsulation,Inheritance,A
+1,FALSE,37,OOP (Object-Oriented Programming),Theoretical,"If a `Dog` class and a `Cat` class both inherit from `Animal` and both implement a `makeSound()` method, this is a clear example of:",Abstraction,"Polymorphism (specifically, overriding)",Encapsulation,A syntax error,B
+1,FALSE,38,OOP (Object-Oriented Programming),Theoretical,"The OOP principle of hiding complex implementation details and exposing only the essential, high-level features is called:",Abstraction,Inheritance,Polymorphism,State,A
+1,FALSE,39,OOP (Object-Oriented Programming),Theoretical,"What is a ""constructor""?",A method that destroys an object.,A special method in a class that is automatically called when a new object is created (instantiated).,A regular method that returns a value.,A global function for building objects.,B
+1,FALSE,40,OOP (Object-Oriented Programming),Theoretical,OOP is a paradigm that attempts to model computation as:,A series of mathematical function evaluations.,A set of real-world entities (objects) that interact by sending messages (calling methods).,A top-down sequence of instructions.,A set of logical declarations.,B
+1,FALSE,41,Imperative vs Declarative,Theoretical,The imperative paradigm focuses on:,*What* the desired result is.,"*How* to execute a task, describing the step-by-step control flow.",The mathematical relationship between inputs and outputs.,Responding to user events.,B
+1,FALSE,42,Imperative vs Declarative,Theoretical,The declarative paradigm focuses on:,"*What* the desired result is, without explicitly stating the step-by-step flow.",*How* to mutate variables in a specific order.,The order of operations and procedure calls.,The use of objects and classes.,A
+1,FALSE,43,Imperative vs Declarative,Theoretical,Which of the following is an imperative approach to finding all even numbers in a list `L`?,"`return filter(L, is_even)`",`SELECT * FROM L WHERE L.value % 2 == 0`,`new_list = []; for n in L: if n % 2 == 0: new_list.append(n); return new_list`,`even_numbers(L)`,C
+1,FALSE,44,Imperative vs Declarative,Theoretical,Which of the following is a declarative approach to finding all even numbers in a list `L`?,`new_list = []; for n in L: if n % 2 == 0: new_list.append(n); return new_list`,`return L.filter(n -> n % 2 == 0)`,`int i = 0; while (i < L.length) { ... i++; }`,`goto check_even;`,B
+1,FALSE,45,Imperative vs Declarative,Theoretical,The SQL query `SELECT name FROM users WHERE age > 18` is an example of:,Imperative programming,Procedural programming,Declarative programming,Object-Oriented programming,C
+1,FALSE,46,Imperative vs Declarative,Theoretical,Procedural programming (Lesson 2) is a type of:,Declarative paradigm,Functional paradigm,Imperative paradigm,Event-Driven paradigm,C
+1,FALSE,47,Imperative vs Declarative,Theoretical,Functional programming (Lesson 3) is a type of:,Declarative paradigm,Imperative paradigm,Procedural paradigm,OOP,A
+1,FALSE,48,Imperative vs Declarative,Theoretical,HTML (HyperText Markup Language) is considered:,"Imperative, because the browser follows steps.","Declarative, because it describes *what* should be on the page, not *how* to draw it.","Procedural, because tags are in order.","Object-Oriented, because of tags.",B
+1,FALSE,49,Imperative vs Declarative,Theoretical,A key benefit of the declarative paradigm is that the code is often:,Faster to execute.,"More concise, readable, and easier to reason about.",More explicit about resource management.,Closer to the machine's hardware.,B
+1,FALSE,50,Imperative vs Declarative,Theoretical,A key benefit of the imperative paradigm is that the programmer has:,Less control over the program flow.,No ability to manage memory.,"Explicit control over the step-by-step execution and state, which can be easier for low-level optimization.",Code that is guaranteed to be bug-free.,C
+1,FALSE,51,Event-Driven Programming (EDP),Theoretical,"In Event-Driven Programming, the flow of the program is primarily determined by:","A predefined, top-to-bottom sequence of instructions.","External events, such as user actions (mouse clicks, key presses) or messages.",The creation and interaction of objects.,The evaluation of mathematical functions.,B
+1,FALSE,52,Event-Driven Programming (EDP),Theoretical,"What is an ""event handler"" (or ""listener"")?",A loop that waits for an event.,A piece of hardware that generates events.,A callback function that is registered to be executed when a specific event occurs.,A variable that stores the last event.,C
+1,FALSE,53,Event-Driven Programming (EDP),Theoretical,"What is the ""event loop""?",A `for` loop that iterates through all possible events.,"A central mechanism in an application that continuously waits for, queues, and dispatches events to their handlers.","A user interface component, like a button.",A syntax error where a program never ends.,B
+1,FALSE,54,Event-Driven Programming (EDP),Theoretical,EDP is the dominant paradigm for what type of applications?,Command-line batch processing tools.,Graphical User Interfaces (GUIs) and web servers.,Mathematical simulations.,Compiler design.,B
+1,FALSE,55,Event-Driven Programming (EDP),Theoretical,"What does ""asynchronous"" mean in the context of EDP?",The program only does one thing at a time.,The code is executed in a random order.,The program does not wait for an operation (like an event) to complete; it registers a handler and continues.,The code must be run at a specific time of day.,C
+1,FALSE,56,Event-Driven Programming (EDP),Theoretical,Which programming language is most commonly associated with client-side (browser) event-driven programming?,C,"Java (on the server-side, perhaps, but not client-side)",JavaScript,Haskell,C
+1,FALSE,57,Event-Driven Programming (EDP),Theoretical,"A function that is passed as an argument to another function, with the intention of being ""called back"" later, is known as a:",Callback function,Constructor,Pure function,Recursive function,A
+1,FALSE,58,Event-Driven Programming (EDP),Theoretical,"How does the control flow of EDP differ from a simple, top-down procedural program?",It is exactly the same.,"The procedural program has a fixed, linear path; the EDP program's path is dynamic and depends on external events.",EDP has no control flow.,Procedural programs cannot use functions.,B
+1,FALSE,59,Event-Driven Programming (EDP),Theoretical,"What is the typical ""main state"" of an event-driven application (like a web browser)?","Executing a long, complex calculation.",Waiting in the event loop for the next event to occur.,Shutting down.,Initializing its variables.,B
+1,FALSE,60,Event-Driven Programming (EDP),Theoretical,"When you click a button on a website and a menu appears, this is an example of:",The program's `onClick` event being triggered and its handler being executed.,A procedural script running from top to bottom.,A bug.,A declarative SQL query.,A
+1,FALSE,61,Component Mappings,Theoretical,"How is ""behavior"" (logic) primarily represented in Procedural programming?",As methods attached to objects.,As standalone procedures or functions.,"As pure, mathematical functions.",As event listeners.,B
+1,FALSE,62,Component Mappings,Theoretical,"How is ""behavior"" (logic) primarily represented in OOP?","As methods, which are functions bound to objects.","As global, standalone functions.",As declarative rules.,"As a single, main procedure.",A
+1,FALSE,63,Component Mappings,Theoretical,"How is ""behavior"" (logic) primarily represented in Functional programming?",As methods that mutate state.,As pure functions that transform data.,As objects that send messages.,As a sequence of imperative steps.,B
+1,FALSE,64,Component Mappings,Theoretical,"How is ""state"" (data) typically managed in OOP?",It is encapsulated (hidden) as private attributes inside an object.,"It is stored in global, mutable variables.",It is avoided entirely.,It is passed from one procedure to the next.,A
+1,FALSE,65,Component Mappings,Theoretical,"How is ""state"" (data) typically managed in pure Functional programming?",It is encapsulated inside objects.,"It is stored in global, mutable variables.","It is immutable; ""changes"" are made by creating new data based on the old data.",It is managed by event handlers.,C
+1,FALSE,66,Component Mappings,Theoretical,"How is ""state"" (data) typically managed in Procedural programming?",It is immutable.,It is encapsulated in objects.,It is often held in mutable variables (local or global) that are modified by procedures.,It is handled only by the event loop.,C
+1,FALSE,67,Component Mappings,Theoretical,What is the Functional programming equivalent of an imperative `for` loop (iteration)?,"Recursion or higher-order functions (like `map`, `filter`, `reduce`).",A `switch` statement.,An `if-else` block.,An object constructor.,A
+1,FALSE,68,Component Mappings,Theoretical,"In OOP, *polymorphism* (e.g., `animal.makeSound()`) allows different objects to respond to the same message. How might FP achieve a similar result?",By using inheritance.,By using a `switch` statement on the object's type.,"By using a higher-order function that accepts a *different function* (a ""strategy"") as an argument.",By modifying a global variable.,C
+1,FALSE,69,Component Mappings,Theoretical,"What is the closest equivalent to an OOP ""object"" (which bundles data and behavior) in Procedural C programming?",A global variable.,A `struct` (to hold data) combined with a set of functions that accept that `struct` as a parameter.,A single function.,A `#define` macro.,B
+1,FALSE,70,Component Mappings,Theoretical,How does the Event-Driven paradigm (Lesson 6) often map to the OOP paradigm (Lesson 4)?,Events are modeled as functions.,"The UI element (e.g., a button) is modeled as an object.","The event listener (e.g., `onClick`) is a method of that object.",B and C are both correct.,D
+,,,,,,,,,,
+,,,Part 2. Programming Questions,,,,,,,
+,Done,Num.,Programming Language,Question Type,Question Body,Choice A,Choice B,Choice C,Choice D,Correct Answer
+2,FALSE,71,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+int main() {
+    int x = 10;
+    int y = 4;
+    float z = x / y;
+    printf(""%.2f"", z);
+    return 0;
+}
+```",2.5,2,2,0,B
+2,FALSE,72,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+int main() {
+    int i;
+    for (i = 1; i < 5; i++) {
+        if (i == 3) {
+            continue;
+        }
+        printf(""%d "", i);
+    }
+    return 0;
+}
+```",1 2 3 4 ,1 2 2004,1 2,1 2 4 5 ,B
+2,FALSE,73,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+void update(int *p) {
+    *p = 20;
+}
+int main() {
+    int x = 5;
+    update(&x);
+    printf(""%d"", x);
+    return 0;
+}
+```",5,20,(Compilation Error),(A random memory address),B
+2,FALSE,74,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+int main() {
+    int a = 15;
+    int b = 4;
+    int c = a % b;
+    printf(""%d"", c);
+    return 0;
+}
+```",3.75,4,3,1,C
+2,FALSE,75,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char str[] = ""World"";
+    printf(""%zu"", strlen(str));
+    return 0;
+}
+```",5,6,4,(Compilation Error),A
+2,FALSE,76,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+int main() {
+    int x = 5;
+    x = x++;
+    printf(""%d"", x);
+    return 0;
+}
+```",5,6,0,(Undefined behavior),D
+2,FALSE,77,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+int main() {
+    int i = 10;
+    do {
+        printf(""Loop "");
+        i++;
+    } while (i < 10);
+    return 0;
+}
+```",(No output),Loop ,Loop Loop ... (Infinite loop),(Compilation Error),B
+2,FALSE,78,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+int main() {
+    int arr[3] = {100, 200, 300};
+    int *ptr = arr;
+    printf(""%d"", *(ptr + 2));
+    return 0;
+}
+```",100,200,300,(A memory address),C
+2,FALSE,79,C,Output Prediction,"What is the output of the following C code?
+```c
+#include <stdio.h>
+int main() {
+    int x = 10, y = 10;
+    if (x > 10) {
+        printf(""A"");
+    } else if (y == 10) {
+        printf(""B"");
+    } else {
+        printf(""C"");
+    }
+    return 0;
+}
+```",A,B,C,BC,B
+2,FALSE,80,C,Code Snippet,"We want to print the numbers 1, 2, 3, and 4.
+**Expected Output:** `1 2 3 4 `","`for (int i = 1; i <= 4; i++) { printf(""%d "", i); }`","`for (int i = 0; i <= 4; i++) { printf(""%d "", i); }`","`for (int i = 1; i < 4; i++) { printf(""%d "", i); }`","`for (int i = 0; i < 4; i++) { printf(""%d "", i); }`",A
+2,FALSE,81,C,Code Snippet,"We want to declare a pointer `p` that holds the memory address of an integer variable `age`.
+**Expected Result:** `p` points to `age`.",`int p = &age;`,`int *p = age;`,`int *p = &age;`,`int &p = age;`,C
+2,FALSE,82,C,Code Snippet,"We want to define a `struct` (a procedural data structure) to hold a student's ID and GPA.
+**Expected Result:** A `struct` named `Student`.",`class Student { int id; float gpa; };`,`struct Student { int id; float gpa; };`,"`def Student(id, gpa):`","`struct Student(int id, float gpa);`",B
+2,FALSE,83,C,Code Snippet,"We want to print ""Access Granted"" only if `age` is 18 or greater AND `hasKey` is true (1).
+**Expected Result:** ""Access Granted"" if both conditions are met.","`if (age >= 18 || hasKey == 1) { printf(""Access Granted""); }`","`if (age >= 18 && hasKey == 1) { printf(""Access Granted""); }`","`if (age == 18 && hasKey == 1) { printf(""Access Granted""); }`","`if (age >= 18) { printf(""Access Granted""); }`",B
+2,FALSE,84,C,Code Snippet,"Which snippet dynamically allocates memory for an array of 20 `char` values (a string)?
+**Expected Result:** `str` points to a memory block for 20 chars. (Requires `#include <stdlib.h>`)",`char str[20];`,`char *str = malloc(20);`,`char *str = malloc(20 * sizeof(char));`,`char *str = new char[20];`,C
+2,FALSE,85,C,Code Snippet,"We want to define a C function `multiply` that takes two integers and returns their product.
+**Expected Result:** A function definition for `multiply`.","`int multiply(int a, int b) { return a * b; }`","`void multiply(int a, int b) { return a * b; }`","`function multiply(a, b) { return a * b; }`","`int multiply(int a, int b) { printf(""%d"", a * b); }`",A
+2,FALSE,86,C,Code Snippet,"We want to read a single character from the user and store it in the variable `c`.
+**Expected Result:** User input is stored in `c`.","`scanf(""%d"", &c);`","`scanf(""%c"", c);`","`scanf(""%s"", &c);`","`scanf(""%c"", &c);`",D
+2,FALSE,87,C,Code Snippet,"We want to print the character 'Z'.
+**Expected Output:** `Z`","`printf(""%s"", 'Z');`","`printf(""%c"", ""Z"");`","`printf(""%c"", 'Z');`","`printf(""%s"", ""Z"");`",C
+2,FALSE,88,C,Fill-in-the-Blank,"Fill in the blank to print the numbers 0 through 9.
+**Expected Output:** `0 1 2 3 4 5 6 7 8 9 `
+```c
+#include <stdio.h>
+int main() {
+    int i = 0;
+    while (____) {
+        printf(""%d "", i);
+        i++;
+    }
+    return 0;
+}
+```",`i <= 10`,`i < 10`,`i > 9`,`i != 10`,B
+2,FALSE,89,C,Fill-in-the-Blank,"Fill in the blank to correctly include the standard input/output library.
+```c
+____
+
+int main() {
+    printf(""Hello"");
+    return 0;
+}
+```",`#include <stdlib.h>`,`#include <stdio.h>`,`import (stdio)`,"`#include ""stdio.h""`",B
+2,FALSE,90,C,Fill-in-the-Blank,"Fill in the blank to define a constant `PI` using the preprocessor.
+**Expected Output:** `3.14`
+```c
+#include <stdio.h>
+____ PI 3.14
+
+int main() {
+    printf(""%.2f"", PI);
+    return 0;
+}
+```",`const float`,`#const PI =`,`#define`,`typedef`,C
+2,FALSE,91,C,Fill-in-the-Blank,"Fill in the blank to correctly access the `gpa` member of the `Student` struct.
+```c
+#include <stdio.h>
+struct Student { int id; float gpa; };
+
+int main() {
+    struct Student s1 = {101, 3.5};
+    printf(""%.1f"", ____);
+    return 0;
+}
+```",`s1->gpa`,`s1.gpa`,`s1[gpa]`,`gpa(s1)`,B
+2,FALSE,92,C,Fill-in-the-Blank,"Fill in the blank to access the `gpa` member using a *pointer* to the struct.
+```c
+#include <stdio.h>
+struct Student { int id; float gpa; };
+
+int main() {
+    struct Student s1 = {101, 3.5};
+    struct Student *ptr = &s1;
+    printf(""%.1f"", ____);
+    return 0;
+}
+```",`*ptr.gpa`,`ptr[gpa]`,`ptr.gpa`,`ptr->gpa`,D
+2,FALSE,93,C,Fill-in-the-Blank,"Fill in the blank to complete this recursive factorial function.
+**Expected Result:** `fact(5)` returns 120.
+```c
+int fact(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        ____;
+    }
+}
+```",`return n + fact(n-1);`,`return n * fact(n-1);`,`return n * (n-1);`,`return fact(n-1);`,B
+2,FALSE,94,C,Fill-in-the-Blank,"Fill in the blank for the `switch` statement's ""default"" case.
+```c
+#include <stdio.h>
+int main() {
+    int x = 5;
+    switch(x) {
+        case 1: printf(""One""); break;
+        case 2: printf(""Two""); break;
+        ____: printf(""Other"");
+    }
+    return 0;
+}
+```",`case else`,`default`,`case _`,`otherwise`,B
+2,FALSE,95,C,Fill-in-the-Blank,"Fill in the blank to correctly swap the values of `a` and `b`.
+**Expected Result:** `a` becomes 20, `b` becomes 10.
+```c
+int a = 10;
+int b = 20;
+int temp;
+
+temp = a;
+a = b;
+____; 
+```",`b = a;`,`a = temp;`,`temp = b;`,`b = temp;`,D
+2,FALSE,96,Java,Output Prediction,"What is the output of the following Java code?
+```java
+public class Test {
+    public static void main(String[] args) {
+        String s1 = ""Hello"";
+        String s2 = new String(""Hello"");
+        System.out.println(s1 == s2);
+    }
+}
+```",TRUE,FALSE,(Compilation Error),Hello,B
+2,FALSE,97,Java,Output Prediction,"What is the output of the following Java code?
+```java
+public class Test {
+    public static void main(String[] args) {
+        String s1 = ""Hello"";
+        String s2 = new String(""Hello"");
+        System.out.println(s1.equals(s2));
+    }
+}
+```",TRUE,FALSE,(Compilation Error),Hello,A
+2,FALSE,98,Java,Output Prediction,"What is the output of the following Java code? (OOP)
+```java
+class Dog {
+    public void bark() {
+        System.out.print(""Woof"");
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.bark();
+    }
+}
+```",`d.bark()`,(No output),(Compilation Error),Woof,D
+2,FALSE,99,Java,Output Prediction,"What is the output of the following Java code? (OOP)
+```java
+class Person {
+    String name;
+    Person(String name) {
+        this.name = name;
+        System.out.print(""Person created: "" + this.name);
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Person p = new Person(""Ada"");
+    }
+}
+```",Person created: Ada,Ada,"(No output, constructor just runs)",(Compilation Error),A
+2,FALSE,100,Java,Output Prediction,"What is the output of the following Java code?
+```java
+import java.util.ArrayList;
+public class Test {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add(""A"");
+        list.add(""B"");
+        list.add(""C"");
+        list.remove(1);
+        System.out.println(list);
+    }
+}
+```","[A, B, C]","[A, C]","[B, C]","[A, B]",B
+2,FALSE,101,Java,Output Prediction,"What is the output of the following Java code?
+```java
+public class Test {
+    public static void main(String[] args) {
+        try {
+            int x = 10 / 0;
+            System.out.print(""A"");
+        } catch (ArithmeticException e) {
+            System.out.print(""B"");
+        } finally {
+            System.out.print(""C"");
+        }
+    }
+}
+```",AC,A,BC,B,C
+2,FALSE,102,Java,Output Prediction,"What is the output of the following Java code?
+```java
+public class Test {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                break;
+            }
+            System.out.print(i + "" "");
+        }
+    }
+}
+```",0 1 2 3 4 ,0 1 2 3 5 6 7 8 9 ,0 1 2 3 ,2000 1 2,C
+2,FALSE,103,Java,Output Prediction,"What is the output of the following Java code? (OOP)
+```java
+class Counter {
+    static int staticCount = 0;
+    int instanceCount = 0;
+    
+    Counter() {
+        staticCount++;
+        instanceCount++;
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+        System.out.println(c2.instanceCount + "" "" + Counter.staticCount);
+    }
+}
+```",1 1,1 2,2 1,2 2,B
+2,FALSE,104,Java,Output Prediction,"What is the output of the following Java code? (OOP)
+```java
+class Animal {
+    Animal() { System.out.print(""Animal ""); }
+}
+class Dog extends Animal {
+    Dog() { System.out.print(""Dog ""); }
+}
+public class Test {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+    }
+}
+```",Dog ,Animal ,Animal Dog ,Dog Animal ,C
+2,FALSE,105,Java,Code Snippet,"We want to print ""Hello World"" to the console.
+**Expected Output:** `Hello World`","`public class Main { public static void main(String[] args) { System.out.println(""Hello World""); } }`","`public class Main { public static void main(String[] args) { printf(""Hello World""); } }`","`public class Main { public void main(String[] args) { System.out.println(""Hello World""); } }`","`public class Main { public static void main(String[] args) { console.log(""Hello World""); } }`",A
+2,FALSE,106,Java,Code Snippet,"We want a `Car` class to inherit from a `Vehicle` class.
+**Expected Result:** `Car` is a subclass of `Vehicle`.",`class Car imports Vehicle { ... }`,`class Car extends Vehicle { ... }`,`class Car implements Vehicle { ... }`,`class Car : Vehicle { ... }`,B
+2,FALSE,107,Java,Code Snippet,"We want to iterate through an array `letters = {""A"", ""B"", ""C""}` and print each element.
+**Expected Output:** `A B C `","`for (int i = 0; i < letters.length; i++) { System.out.print(letters[i] + "" ""); }`","`for (String s : letters) { System.out.print(s + "" ""); }`",`System.out.println(letters);`,A and B are both correct.,D
+2,FALSE,108,Java,Code Snippet,"We want to define an *interface* named `Shape` that requires implementing classes to have a `draw()` method.
+**Expected Result:** An interface `Shape`.",`public abstract class Shape { public abstract void draw(); }`,`public interface Shape { void draw(); }`,`public class Shape { public virtual void draw() {} }`,`public interface Shape { public void draw() { /* default */ } }`,B
+2,FALSE,109,Java,Code Snippet,"We want to catch a *specific* exception that occurs if we try to call a method on a `null` object.
+**Expected Result:** Code handles a `NullPointerException`.",`try { ... } catch (Exception e) { ... }`,`try { ... } catch (NullPointerException e) { ... }`,`try { ... } catch (IOException e) { ... }`,`try { ... } finally { ... }`,B
+2,FALSE,110,Java,Code Snippet,"We want to create a `HashMap` to store student names (String) and their grades (Integer).
+**Expected Result:** A `HashMap` named `grades`.","`Map<String, Integer> grades = new HashMap<>();`","`HashMap<String, Integer> grades = new HashMap();`","`Map<String, int> grades = new HashMap<>();`",A and B are both correct.,D
+2,FALSE,111,Java,Code Snippet,"We want to get the number of characters in a `String` variable `s`.
+**Expected Result:** (e.g., if `s = ""Java""`, the result is 4).",`s.length()`,`s.length`,`s.size()`,`s.count()`,A
+2,FALSE,112,Java,Code Snippet,"We want to check if the *content* of `String s1` is the same as `String s2`.
+**Expected Result:** `true` if they hold the same text, `false` otherwise.",`s1 == s2`,`s1.equals(s2)`,`s1.compareTo(s2) == 0`,B and C are both correct (for equality).,D
+2,FALSE,113,Java,Fill-in-the-Blank,"Fill in the blank to define a class named `Dog`. (OOP)
+```java
+public ____ Dog {
+    String name;
+}
+```",`class`,`interface`,`object`,`struct`,A
+2,FALSE,114,Java,Fill-in-the-Blank,"Fill in the blank to define a valid *constructor* for the `Person` class. (OOP)
+```java
+public class Person {
+    String name;
+    
+    public ____(String name) {
+        this.name = name;
+    }
+}
+```",`void`,`Person`,`String`,`PersonFactory`,B
+2,FALSE,115,Java,Fill-in-the-Blank,"Fill in the blank to call the superclass (Animal) constructor from the Dog subclass. (OOP)
+```java
+class Animal {
+    String name;
+    Animal(String name) { this.name = name; }
+}
+class Dog extends Animal {
+    Dog(String name) {
+        ____; // Call Animal's constructor
+    }
+}
+```",`this(name)`,`Animal(name)`,`super(name)`,`super.Animal(name)`,C
+2,FALSE,116,Java,Fill-in-the-Blank,"Fill in the blank to make the `MyTask` class conform to the `Runnable` interface. (OOP)
+```java
+public class MyTask ____ Runnable {
+    public void run() {
+        System.out.println(""Task running..."");
+    }
+}
+```",`extends`,`implements`,`uses`,`inherits`,B
+2,FALSE,117,Java,Fill-in-the-Blank,"Fill in the blank to compare the *value* of the `int` variable `x` to 10.
+```java
+int x = 10;
+if (x ____ 10) {
+    System.out.println(""It is 10"");
+}
+```",`equals`,`.is()`,`==`,`=`,C
+2,FALSE,118,Java,Fill-in-the-Blank,"Fill in the blank to create a ""getter"" method for the `name` attribute. (OOP)
+```java
+public class Student {
+    private String name;
+    
+    public String getName() {
+        ____;
+    }
+}
+```",`return name`,`return this.name`,`System.out.println(this.name)`,A and B are both correct.,D
+2,FALSE,119,Java,Fill-in-the-Blank,"Fill in the blank to complete the `try-catch` block for exception handling.
+```java
+try {
+    // Risky code
+    int result = 100 / 0;
+} ____ (Exception e) {
+    System.out.println(""Error occurred"");
+}
+```",`except`,`when`,`catch`,`finally`,C
+2,FALSE,120,Java,Fill-in-the-Blank,"Fill in the blank to import the `ArrayList` class.
+```java
+____;
+
+public class Test {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+    }
+}
+```",`import java.ArrayList`,`include java.util.ArrayList`,`import java.util.ArrayList`,`import java.util.*`,C
+2,FALSE,121,Python,Output Prediction,"What is the output of the following Python code?
+```python
+my_list = [10, 20, 30, 40, 50]
+print(my_list[1:3])
+```","[10, 20, 30]","[20, 30]","[20, 30, 40]","[10, 20]",B
+2,FALSE,122,Python,Output Prediction,"What is the output of the following Python code?
+```python
+my_dict = {
+    ""name"": ""Alice"",
+    ""age"": 25
+}
+print(my_dict[""age""])
+```","""Alice""","""age""",25,(KeyError),C
+2,FALSE,123,Python,Output Prediction,"What is the output of the following Python code?
+```python
+for i in range(1, 4):
+    print(i, end="" "")
+```",1 2 3 4 ,0 1 2 3 ,1 2 2003,1 4,C
+2,FALSE,124,Python,Output Prediction,"What is the output of the following Python code? (Functional)
+```python
+def greet(name=""World""):
+    return f""Hello, {name}""
+
+print(greet())
+```","Hello, name","Hello, World","Hello, ",(Error: missing argument),B
+2,FALSE,125,Python,Output Prediction,"What is the output of the following Python code? (OOP)
+```python
+class Car:
+    def __init__(self, color):
+        self.color = color
+
+my_car = Car(""Red"")
+print(my_car.color)
+```",color,self.color,Red,(Error),C
+2,FALSE,126,Python,Code Snippet,"We want to create a new list containing the squares of the numbers in `nums = [1, 2, 3, 4]`.
+**Expected Output:** `[1, 4, 9, 16]`",`squares = [n * 2 for n in nums]`,`squares = [n * n for n in nums]`,`squares = [n for n in nums if n*n]`,`squares = {n: n*n for n in nums}`,B
+2,FALSE,127,Python,Code Snippet,"We want to define a function `greet` that takes one argument `name`.
+**Expected Result:** A function definition.",`function greet(name):`,`def greet(name)`,`def greet(name):`,`def greet[name]:`,C
+2,FALSE,128,Python,Code Snippet,"We want to print every character in the string ""Hi"" on a new line.
+**Expected Output:**
+H
+i
+","`print(""H\ni"")`","`for c in ""Hi"": print(c)`","`print(""H"", ""i"")`",A and B are both correct.,D
+2,FALSE,129,Python,Code Snippet,"We want to use the `sqrt` (square root) function from the `math` module.
+**Expected Result:** The `math` module is imported.",`include math`,`import math`,"`require ""math""`",`using math`,B
+2,FALSE,130,Python,Code Snippet,"We want to create a dictionary (a declarative key-value map) where the key ""fruit"" maps to the value ""Apple"".
+**Expected Result:** A dictionary `d`.","`d = [""fruit"", ""Apple""]`","`d = (""fruit"", ""Apple"")`","`d = {""fruit"": ""Apple""}`","`d = {""fruit"" = ""Apple""}`",C
+2,FALSE,131,Python,Fill-in-the-Blank,"Fill in the blank to complete the `if` statement syntax.
+```python
+x = 10
+if x > 5____
+    print(""x is greater than 5"")
+```",then,{,:,( ),C
+2,FALSE,132,Python,Fill-in-the-Blank,"Fill in the blank to define the `__init__` constructor in a Python class. (OOP)
+```python
+class Dog:
+    def ____(self, name):
+        self.name = name
+```",`__init__`,`__constructor__`,`Dog`,`__new__`,A
+2,FALSE,133,Python,Fill-in-the-Blank,"Fill in the blank to correctly loop through the `my_list`.
+```python
+my_list = [1, 2, 3]
+for item ____ my_list:
+    print(item)
+```",of,in,from,#ERROR!,B
+2,FALSE,134,Python,Fill-in-the-Blank,"Fill in the blank to assign the `name` parameter to the object's `name` attribute. (OOP)
+```python
+class Person:
+    def __init__(self, name):
+        ____ = name
+```",name,self.name,this.name,Person.name,B
+2,FALSE,135,Python,Fill-in-the-Blank,"Fill in the blank to apply a `filter` (a functional concept) to keep only even numbers.
+```python
+nums = [1, 2, 3, 4]
+evens = list(filter(lambda x: ____, nums))
+# evens will be [2, 4]
+```",`x % 2 == 0`,`x % 2 == 1`,`x`,`return x % 2 == 0`,A
+2,FALSE,136,JavaScript,Output Prediction,"What is the output of the following JavaScript code?
+```javascript
+console.log('5' + 5);
+```",10,55,55',(Error),C
+2,FALSE,137,JavaScript,Output Prediction,"What is the output of the following JavaScript code?
+```javascript
+let x = 10;
+if (true) {
+    let x = 20;
+    console.log(x);
+}
+console.log(x);
+```",20 (new line) 10,20 (new line) 20,10 (new line) 10,10 (new line) 20,A
+2,FALSE,138,JavaScript,Code Snippet,"We want to define a ""fat arrow"" function (a functional concept) that adds two numbers.
+**Expected Result:** A function `add` that returns the sum of `a` and `b`.","`const add = (a, b) => { a + b };`","`const add = (a, b) => a + b;`","`const add = function(a, b) => a + b;`",`const add = (a + b);`,B
+2,FALSE,139,JavaScript,Code Snippet,"We want to select an HTML element that has the ID `main-title`. (Event-Driven)
+**Expected Result:** The variable `title` holds the element object.","`let title = document.querySelector(""#main-title"");`","`let title = document.getElementById(""main-title"");`","`let title = document.getElementsByClassName(""main-title"");`",A and B are both correct.,D
+2,FALSE,140,JavaScript,Code Snippet,"We want to create a new array by doubling every number in `nums = [1, 2, 3]`. (Functional)
+**Expected Output:** `[2, 4, 6]`",`let doubled = nums.map(n => n * 2);`,`let doubled = nums.filter(n => n * 2);`,`let doubled = nums.forEach(n => n * 2);`,`let doubled = nums.reduce(n => n * 2);`,A
+2,FALSE,141,JavaScript,Code Snippet,"We want to define an object literal (declarative) representing a user.
+**Expected Result:** An object `user`.","`const user = {""name"": ""Ben""};`","`const user = {name: ""Ben""};`","`const user = new Object(""name"", ""Ben"");`",A and B are both correct.,D
+2,FALSE,142,JavaScript,Fill-in-the-Blank,"Fill in the blank to attach an *event listener* for a 'click' event. (Event-Driven)
+```javascript
+const myButton = document.getElementById(""btn"");
+myButton.____(""click"", () => {
+    console.log(""Button was clicked!"");
+});
+```",onClick,on,addEventListener,attachEvent,C
+2,FALSE,143,JavaScript,Fill-in-the-Blank,"Fill in the blank to check for *strict* equality (value and type).
+**Expected Result:** `true` if `x` is the number 5, `false` if it's the string '5'.
+```javascript
+let x = 5;
+if (x ____ 5) {
+    // ...
+}
+```",#ERROR!,#ERROR!,#ERROR!,is,B
+2,FALSE,144,JavaScript,Fill-in-the-Blank,"Fill in the blank to define a named function `calculate`.
+```javascript
+____ calculate(a, b) {
+    return a + b;
+}
+```",def,const,function,void,C
+2,FALSE,145,JavaScript,Fill-in-the-Blank,"What is the output of the following Java code?
+```java
+class Animal {
+    void speak() { System.out.print(""?""); }
+}
+class Dog extends Animal {
+    @Override
+    void speak() { System.out.print(""Woof""); }
+}
+public class Test {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+        a.speak();
+    }
+}
+```",?,Woof,?Woof,(Compilation Error),B
+2,FALSE,146,JavaScript,Fill-in-the-Blank,"Fill in the blank to find the *length* of the array `data`.
+```javascript
+const data = [10, 20, 30];
+for (let i = 0; i < data.____; i++) {
+    console.log(data[i]);
+}
+```",`length()`,`size()`,`size`,`length`,D
