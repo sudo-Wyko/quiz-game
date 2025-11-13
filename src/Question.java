@@ -26,7 +26,8 @@ public class Question {
         System.out.println("Lesson: " + lesson.toString());
         System.out.println(prompt);
         System.out.println("----------------------------------");
-        System.out.println(options[0] + "\n" + options[1] + "\n" + options[2] + "\n" + options[3] + "\n");
+        System.out.println(
+                "A. " + options[0] + "\nB. " + options[1] + "\nC. " + options[2] + "\nD. " + options[3] + "\n");
     }
 
     public char GetAnswer() {

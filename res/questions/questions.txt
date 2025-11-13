@@ -24,7 +24,7 @@
 1@FunctionalProgramming@Theoretical@"Which of the following is an example of a ""side effect""?"@Calculating the sum of two numbers.@Modifying a global variable.@Returning a value.@Taking a parameter.@B
 1@FunctionalProgramming@Theoretical@"In ""pure"" FP, what concept is often used for iteration instead of traditional `for` or `while` loops?"@`goto` statements@Recursion@Procedure calls@Global variables@B
 1@FunctionalProgramming@Theoretical@A function that either takes another function as an argument or returns a function is called:@A pure function@A higher-order function@An impure function@A constructor@B
-1@FunctionalProgramming@Theoretical@Functional programming is a sub-paradigm of which broader paradigm?@@Procedural@Object-Oriented@Declarative@D
+1@FunctionalProgramming@Theoretical@Functional programming is a sub-paradigm of which broader paradigm?@Imperative@Procedural@Object-Oriented@Declarative@D
 1@FunctionalProgramming@Theoretical@"""Referential transparency"" is a property of pure functions which means:"@A function's name must refer to its purpose.@A function call can be replaced by its resulting value without changing the program's behavior.@A function must be written by a trusted source.@A function must be visible to all other parts of the program.@B
 1@FunctionalProgramming@Theoretical@What is a key benefit of immutability and pure functions?@Programs use less memory.@"Programs are easier to test, debug, and run in parallel (concurrency)."@Programs run faster on a single core.@Programs require less code.@B
 1@FunctionalProgramming@Theoretical@"Which language is most strongly associated with ""pure"" functional programming?"@C@Haskell@Java@JavaScript@B

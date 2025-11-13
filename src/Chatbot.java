@@ -8,12 +8,14 @@ public class Chatbot {
     private Lesson strong_subject;
     private Lesson weak_subject;
     private char bot_answer;
+    private boolean isAvailable;
 
     Scanner scanner = new Scanner(System.in);
 
     public Chatbot(String name) {
         this.name = name;
         this.bot_answer = ' ';
+        this.isAvailable = true;
         AssignStrengthAndWeakness();
     }
 
@@ -27,6 +29,14 @@ public class Chatbot {
 
     public Lesson GetWeakness() {
         return weak_subject;
+    }
+
+    public boolean GetAvailability() {
+        return isAvailable;
+    }
+
+    public void SetAvailability(boolean bool) {
+        isAvailable = bool;
     }
 
     public void AssignStrengthAndWeakness() {
@@ -82,7 +92,7 @@ public class Chatbot {
         if (choice.equals("y"))
             return bot_answer;
         else {
-            System.out.println("What is your answer? ");
+            System.out.print("What is your answer? ");
             return scanner.nextLine().toUpperCase().charAt(0);
         }
     }

@@ -1,15 +1,18 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Parser {
-    public Question[] GetQuestions(String filepath) {
-        Question[] theoretical_questions = new Question[70];
+
+    public List<Question> GetQuestions(String filepath) {
+
+        List<Question> theoretical_questions = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
             String rline;
 
-            int question_index = 0;
             while ((rline = reader.readLine()) != null) {
                 String[] fields = rline.split("@");
 
@@ -18,8 +21,7 @@ public class Parser {
                 String[] choices = { fields[4], fields[5], fields[6], fields[7] };
                 char correct_ans = fields[8].charAt(0);
 
-                theoretical_questions[question_index] = new Question(lesson, prompt, choices, correct_ans);
-                question_index++;
+                theoretical_questions.add(new Question(lesson, prompt, choices, correct_ans));
             }
         } catch (IOException e) {
             System.out.println("Parsing error.");
@@ -28,5 +30,4 @@ public class Parser {
 
         return theoretical_questions;
     }
-
 }
