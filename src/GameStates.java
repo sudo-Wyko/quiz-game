@@ -49,7 +49,63 @@ public class GameStates {
     }
 
     public void Guide() {
+        ClearTerminal();
+        String guide = """
+                ▄▖  ▘ ▌
+                ▌ ▌▌▌▛▌█▌
+                ▙▌▙▌▌▙▌▙▖
 
+                Below is all you need to know to start playing the game. Read carefully and enjoy!
+
+                ▖▖              ▜
+                ▌▌▛▌▌▌▛▘  ▛▌▛▌▀▌▐
+                ▐ ▙▌▙▌▌   ▙▌▙▌█▌▐▖
+                          ▄▌
+                The goal is prove you are smarter than an AI!
+                - Answer all 14 questions correctly to win.
+                - The game has 7 subjects, with 2 questions each.
+
+                ▄▖▌         ▜
+                ▐ ▛▌█▌  ▛▘▌▌▐ █▌▛▘
+                ▐ ▌▌▙▖  ▌ ▙▌▐▖▙▖▄▌
+
+                - Winning: Answer all 14 questions to achieve a 100% score and win the game.
+                - Losing: Get one answer wrong, and the game ends immediately! (Unless the Save command is available).
+
+                ▄▖         ▜       ▐▘▜
+                ▌ ▀▌▛▛▌█▌▛▌▐ ▀▌▌▌  ▜▘▐ ▛▌▌▌▌
+                ▙▌█▌▌▌▌▙▖▙▌▐▖█▌▙▌  ▐ ▐▖▙▌▚▚▘
+                          ▌    ▄▌
+                For each odd round, you will:
+                - Choose a Chatbot: Pick one of the 7 AI assistants.
+                - Choose a Subject: Select a subject from the board.
+                - Specialty Revealed: The chatbot's strength or weakness for that subject is now revealed.
+                - Answer: Answer the question or use a command.
+
+                ▄▖▌   ▗ ▌   ▗
+                ▌ ▛▌▀▌▜▘▛▌▛▌▜▘▛▘
+                ▙▖▌▌█▌▐▖▙▌▙▌▐▖▄▌
+
+                Each of the 7 chatbots has a hidden specialization:
+                - Strength (90% Accurate): Each bot is an expert in 1 subject.
+                - Weakness (10% Accurate): Each bot is a novice in 1 subject.
+                - Neutral (50% Accurate): For the other 5 subjects, it's a coin flip.
+
+                ▄▖          ▌
+                ▌ ▛▌▛▛▌▀▌▛▌▛▌▛▘
+                ▙▖▙▌▌▌▌█▌▌▌▙▌▄▌
+
+                You have 3 powerful commands. Each can be used only ONCE per game!
+                - Ask: See your chatbot's answer before you choose your own. You must still answer.
+                - Copy Paste: Automatically lock in your chatbot's answer (without seeing it). You pass or fail based on its choice.
+                - Save: This command is used automatically on your first wrong answer. If your chatbot's secret answer was correct, you are saved! If not, the game is over.
+
+                Once all 3 commands are used, you're on your own! Good luck.
+                """;
+        System.out.println(guide);
+        System.out.println("");
+        System.out.println("Press the Enter key to continue...");
+        scanner.nextLine();
     }
 
     public void Quit() {

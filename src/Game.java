@@ -48,6 +48,7 @@ public class Game {
 
             switch (input) {
                 case 'P':
+
                     available_questions = parser.GetQuestions("res/questions/questions.txt");
                     available_chatbots = new ArrayList<>(List.of(chatbots));
                     available_lesson = new ArrayList<>(List.of(Lesson.values()));
@@ -85,6 +86,7 @@ public class Game {
                     }
                     break;
                 case 'G':
+                    game_state.Guide();
                     break;
                 case 'Q':
                     System.out.println("Exiting the program...");
