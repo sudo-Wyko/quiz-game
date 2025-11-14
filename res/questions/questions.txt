@@ -5,8 +5,8 @@
 1@IntroToProgrammingParadigms@Theoretical@Why do different programming paradigms exist?@Because older paradigms are obsolete and replaced by new ones.@To make programming more difficult.@Because different paradigms are better suited for solving different types of problems.@Because computer hardware has changed.@C
 1@IntroToProgrammingParadigms@Theoretical@Which paradigm does the C language primarily follow?@Object-Oriented@Functional@Procedural@Event-Driven@C
 1@IntroToProgrammingParadigms@Theoretical@Which paradigm does the Java language primarily follow?@Object-Oriented@Procedural@Functional@Declarative@A
-1@IntroToProgrammingParadigms@Theoretical@SQL (Structured Query Language) is a classic example of which paradigm?@@Declarative@Procedural@Object-Oriented@B
-1@IntroToProgrammingParadigms@Theoretical@Which paradigm is modeled on the concept of mathematical functions?@Procedural@Object-Oriented@Functional@@C
+1@IntroToProgrammingParadigms@Theoretical@SQL (Structured Query Language) is a classic example of which paradigm?@Imperative@Declarative@Procedural@Object-Oriented@B
+1@IntroToProgrammingParadigms@Theoretical@Which paradigm is modeled on the concept of mathematical functions?@Procedural@Object-Oriented@Functional@Imperative@C
 1@IntroToProgrammingParadigms@Theoretical@"A paradigm defines a program's structure, its building blocks, and:"@The specific company that created it.@The methods of computation and data organization.@The exact speed at which the code will run.@The type of computer it can run on.@B
 1@ProceduralProgramming@Theoretical@What is the fundamental building block of a procedural program?@An object@A procedure (or function/subroutine)@An event@A class@B
 1@ProceduralProgramming@Theoretical@How is a problem typically solved in the procedural paradigm?@By modeling real-world objects.@By defining a sequence of steps or procedure calls to follow.@By responding to user-initiated events.@By defining the logical result without specifying the steps.@B
@@ -35,7 +35,7 @@
 1@OOP@Theoretical@"What is ""inheritance""?"@A mechanism where one object can access the private data of another object.@A mechanism where a new class (subclass) derives properties and methods from an existing class (superclass).@A way to create multiple instances of the same class.@A way to bundle data and methods together.@B
 1@OOP@Theoretical@The ability of an object or method to take on many forms is known as:@Polymorphism@Abstraction@Encapsulation@Inheritance@A
 1@OOP@Theoretical@"If a `Dog` class and a `Cat` class both inherit from `Animal` and both implement a `makeSound()` method@ this is a clear example of:"@Abstraction@"Polymorphism (specifically@ overriding)"@Encapsulation@A syntax error@B
-1@OOP@Theoretical@"The OOP principle of hiding complex implementation details and exposing only the essential@ high-level features is called:"@Abstraction@Inheritance@Polymorphism@State@A
+1@OOP@Theoretical@"The OOP principle of hiding complex implementation details and exposing only the essential, high-level features is called:"@Abstraction@Inheritance@Polymorphism@State@A
 1@OOP@Theoretical@"What is a ""constructor""?"@A method that destroys an object.@A special method in a class that is automatically called when a new object is created (instantiated).@A regular method that returns a value.@A global function for building objects.@B
 1@OOP@Theoretical@OOP is a paradigm that attempts to model computation as:@A series of mathematical function evaluations.@A set of real-world entities (objects) that interact by sending messages (calling methods).@A top-down sequence of instructions.@A set of logical declarations.@B
 1@ImperativeVsDeclarative@Theoretical@The imperative paradigm focuses on:@*What* the desired result is.@"*How* to execute a task, describing the step-by-step control flow."@The mathematical relationship between inputs and outputs.@Responding to user events.@B

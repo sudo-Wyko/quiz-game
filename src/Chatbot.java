@@ -52,7 +52,6 @@ public class Chatbot {
     }
 
     public void PrintStats() {
-        System.out.println("-------------- Chatbot Stats ----------------");
         System.out.println("Name:" + name);
         System.out.println("Specialization: " + strong_subject);
         System.out.println("Weak in: " + weak_subject);
@@ -102,6 +101,7 @@ public class Chatbot {
     }
 
     public char CommandSave() {
+        System.out.println("");
         System.out.println(name + ": My answer is " + bot_answer);
         return bot_answer;
     }
